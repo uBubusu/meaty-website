@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="testingstyle.css">
+  <title> GGI Equestrian Website </title>
+</head>
+<body>
+
+<h1>FURNITURE CATALOGUE</h1>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> SHOW ALL </button>
+  <button class="btn" onclick="filterSelection('chairs')"> CHAIRS </button>
+  <button class="btn" onclick="filterSelection('tables')"> TABLES </button>
+  <button class="btn" onclick="filterSelection('benches')"> BENCHES </button>
+  <button class="btn" onclick="filterSelection('dressers')"> DRESSERS </button>
+  <button class="btn" onclick="filterSelection('beds')"> BEDS </button>
+  <button class="btn" onclick="filterSelection('shelving')"> SHELVING </button>
+  <button class="btn" onclick="filterSelection('chests')"> CHESTS </button>
+  <button class="btn" onclick="filterSelection('lights')"> LIGHTS </button>
+  <button class="btn" onclick="filterSelection('fires')"> FIRES </button>
+  <button class="btn" onclick="filterSelection('animaldecor')"> ANIMAL DECOR </button>
+  <button class="btn" onclick="filterSelection('nativedecor')"> NATIVE DECOR </button>
+  <button class="btn" onclick="filterSelection('gardendecor')"> GARDEN DECOR </button>
+  <button class="btn" onclick="filterSelection('tents')"> TENTS </button>
+  <button class="btn" onclick="filterSelection('cages')"> CAGES </button>
+</div>
+
+<div class="container">
+  <!-- CHAIRS -->
+  <div class="filterDiv chairs"><p>Native Chair</p><img src="Sections/Catalogue/Chairs/Native Chair.png"></div>
+  <div class="filterDiv chairs"><p>Native Wicker Chair</p><img src="Sections/Catalogue/Chairs/Native Wicker Chair.png"></div>
+  <div class="filterDiv chairs"><p>Dead Mans Chair</p><img src="Sections/Catalogue/Chairs/Dead Mans Chair.png"></div>
+  <div class="filterDiv chairs"><p>Wood Chair</p><img src="Sections/Catalogue/Chairs/Wood Chair.png"></div>
+  <div class="filterDiv chairs"><p>Leather Chair</p><img src="Sections/Catalogue/Chairs/Leather Chair.png"></div>
+  <!-- TABLES -->
+  <div class="filterDiv tables"><p>Table</p><img src="Sections/Catalogue/Tables/Table.png"></div>
+  <div class="filterDiv tables"><p>Round Table</p><img src="Sections/Catalogue/Tables/Round Table.png"></div>
+  <div class="filterDiv tables"><p>Rectangle Table</p><img src="Sections/Catalogue/Tables/Rectangle Table.png"></div>
+  <div class="filterDiv tables"><p>Timber Table</p><img src="Sections/Catalogue/Tables/Timber Table.png"></div>
+  <div class="filterDiv tables"><p>Serving Table</p><img src="Sections/Catalogue/Tables/Serving Table.png"></div>
+  <!-- BENCHES -->
+  <div class="filterDiv benches"><p>Log Bench</p><img src="Sections/Catalogue/Benches/Log Bench.png"></div>
+  <div class="filterDiv benches"><p>Log Bench 2</p><img src="Sections/Catalogue/Benches/Log Bench 2.png"></div>
+  <div class="filterDiv benches"><p>Native Bench</p><img src="Sections/Catalogue/Benches/Native Bench.png"></div>
+  <div class="filterDiv benches"><p>Wooden Bench</p><img src="Sections/Catalogue/Benches/Wooden Bench.png"></div>
+  <div class="filterDiv benches"><p>Wicker Bench</p><img src="Sections/Catalogue/Benches/Wicker Bench.png"></div>
+  <div class="filterDiv benches"><p>Bear Bench</p><img src="Sections/Catalogue/Benches/Bear Bench.png"></div>
+  <div class="filterDiv benches"><p>Lounge Chair</p><img src="Sections/Catalogue/Benches/Lounge Chair.png"></div>
+  <div class="filterDiv benches"><p>Lounge Chair 2</p><img src="Sections/Catalogue/Benches/Lounge Chair 2.png"></div>
+  <div class="filterDiv benches"><p>Cloth Bench</p><img src="Sections/Catalogue/Benches/Cloth Bench.png"></div>
+  <!-- DRESSERS -->
+  <div class="filterDiv dressers"><p>Side Table 1</p><img src="Sections/Catalogue/Dressers/Side Table 1.png"></div>
+  <div class="filterDiv dressers"><p>Side Table 2</p><img src="Sections/Catalogue/Dressers/Side Table 2.png"></div>
+  <div class="filterDiv dressers"><p>Side Table 3</p><img src="Sections/Catalogue/Dressers/Side Table 3.png"></div>
+  <div class="filterDiv dressers"><p>Night Stand</p><img src="Sections/Catalogue/Dressers/Night Stand.png"></div>
+  <div class="filterDiv dressers"><p>Brown Wood</p><img src="Sections/Catalogue/Dressers/Brown Wood.png"></div>
+  <div class="filterDiv dressers"><p>Brown Mirror</p><img src="Sections/Catalogue/Dressers/Brown Mirror.png"></div>
+  <!-- BEDS -->
+  <div class="filterDiv beds"><p>Native Bed</p><img src="Sections/Catalogue/Beds/Native Bed.png"></div>
+  <div class="filterDiv beds"><p>Old Bed</p><img src="Sections/Catalogue/Beds/Old Bed.png"></div>
+  <div class="filterDiv beds"><p>Bunk Bed</p><img src="Sections/Catalogue/Beds/Bunk Bed.png"></div>
+  <div class="filterDiv beds"><p>Single Bed</p><img src="Sections/Catalogue/Beds/Single Bed.png"></div>
+  <div class="filterDiv beds"><p>Fancy Double</p><img src="Sections/Catalogue/Beds/Fancy Double.png"></div>
+  <!-- SHELVING -->
+  <div class="filterDiv shelving"><p>Kitchen Counter</p><img src="Sections/Catalogue/Shelving/Kitchen Counter.png"></div>
+  <div class="filterDiv shelving"><p>Bookcase</p><img src="Sections/Catalogue/Shelving/Bookcase.png"></div>
+  <div class="filterDiv shelving"><p>Coat Rack</p><img src="Sections/Catalogue/Shelving/Coat Rack.png"></div>
+  <!-- CHESTS -->
+  <div class="filterDiv chests"><p>Chest 1</p><img src="Sections/Catalogue/Chests/Chest 1.png"></div>
+  <div class="filterDiv chests"><p>Chest 2</p><img src="Sections/Catalogue/Chests/Chest 2.png"></div>
+  <div class="filterDiv chests"><p>Chest C</p><img src="Sections/Catalogue/Chests/Chest C.png"></div>
+  <div class="filterDiv chests"><p>Native Basket 1</p><img src="Sections/Catalogue/Chests/Native Basket 1.png"></div>
+  <div class="filterDiv chests"><p>Native Basket 2</p><img src="Sections/Catalogue/Chests/Native Basket 2.png"></div>
+  <div class="filterDiv chests"><p>Blanket Box</p><img src="Sections/Catalogue/Chests/Blanket Box.png"></div>
+  <div class="filterDiv chests"><p>Beer Box</p><img src="Sections/Catalogue/Chests/Beer Box.png"></div>
+  <div class="filterDiv chests"><p>Gun Barrel</p><img src="Sections/Catalogue/Chests/Gun Barrel.png"></div>
+  <div class="filterDiv chests"><p>Tool Barrel</p><img src="Sections/Catalogue/Chests/Tool Barrel.png"></div>
+  <div class="filterDiv chests"><p>Apple Barrel</p><img src="Sections/Catalogue/Chests/Apple Barrel.png"></div>
+  <div class="filterDiv chests"><p>Food Barrel</p><img src="Sections/Catalogue/Chests/Food Barrel.png"></div>
+  <div class="filterDiv chests"><p>Wash Tub</p><img src="Sections/Catalogue/Garden Decor/Wash Tub.png"></div>
+  <div class="filterDiv chests"><p>Apple Basket</p><img src="Sections/Catalogue/Chests/Apple Basket.png"></div>
+  <!-- LIGHTS -->
+  <div class="filterDiv lights"><p>Bottle Candle</p><img src="Sections/Catalogue/Lights/Bottle Candle.png"></div>
+  <div class="filterDiv lights"><p>Candle</p><img src="Sections/Catalogue/Lights/Candle.png"></div>
+  <div class="filterDiv lights"><p>Dbl Candle</p><img src="Sections/Catalogue/Lights/Dbl Candle.png"></div>
+  <div class="filterDiv lights"><p>Small Melted Candle</p><img src="Sections/Catalogue/Lights/Small Melted Candle.png"></div>
+  <div class="filterDiv lights"><p>Lantern</p><img src="Sections/Catalogue/Lights/Lantern.png"></div>
+  <!-- FIRES -->
+  <div class="filterDiv fires"><p>Crafting Fire</p><img src="Sections/Catalogue/Fires/Crafting Fire.png"></div>
+  <div class="filterDiv fires"><p>Pot</p><img src="Sections/Catalogue/Fires/Pot.png"></div>
+  <div class="filterDiv fires"><p>Native Cooking Pot</p><img src="Sections/Catalogue/Fires/Native Cooking Pot.png"></div>
+  <!-- ANIMAL DECOR -->
+  <div class="filterDiv animaldecor"><p>Deer Pelt</p><img src="Sections/Catalogue/Animal Decor/Deer Pelt.png"></div>
+  <div class="filterDiv animaldecor"><p>Coyote Pelt</p><img src="Sections/Catalogue/Animal Decor/Coyote Pelt.png"></div>
+  <div class="filterDiv animaldecor"><p>Pheasant Taxidemry</p><img src="Sections/Catalogue/Animal Decor/Pheasant Taxidermy.png"></div>
+  <div class="filterDiv animaldecor"><p>Vulture Taxidemry</p><img src="Sections/Catalogue/Animal Decor/Vulture Taxidermy.png"></div>
+  <div class="filterDiv animaldecor"><p>Cougar Taxidemry</p><img src="Sections/Catalogue/Animal Decor/Cougar Taxidermy.png"></div>
+  <div class="filterDiv animaldecor"><p>Coyote Taxidemry</p><img src="Sections/Catalogue/Animal Decor/Coyote Taxidermy.png"></div>
+  <div class="filterDiv animaldecor"><p>Deer Taxidemry</p><img src="Sections/Catalogue/Animal Decor/Deer Taxidermy.png"></div>
+  <div class="filterDiv animaldecor"><p>Native Buck Skull</p><img src="Sections/Catalogue/Animal Decor/Native Buck Skull.png"></div>
+  <div class="filterDiv animaldecor"><p>Native Mask</p><img src="Sections/Catalogue/Animal Decor/Native Mask.png"></div>
+  <!-- NATIVE DECOR -->
+  <div class="filterDiv nativedecor"><p>Bow Display</p><img src="Sections/Catalogue/Native Decor/Bow Display.png"></div>
+  <div class="filterDiv nativedecor"><p>Arrow Display</p><img src="Sections/Catalogue/Native Decor/Arrow Display.png"></div>
+  <div class="filterDiv nativedecor"><p>Dream Catcher</p><img src="Sections/Catalogue/Native Decor/Dream Catcher.png"></div>
+  <div class="filterDiv nativedecor"><p>Native Arms</p><img src="Sections/Catalogue/Native Decor/Native Arms.png"></div>
+  <div class="filterDiv nativedecor"><p>Native Leather Stand</p><img src="Sections/Catalogue/Native Decor/Native Leather Stand.png"></div>
+  <div class="filterDiv nativedecor"><p>Skull Post</p><img src="Sections/Catalogue/Native Decor/Skull Post.png"></div>
+  <div class="filterDiv nativedecor"><p>Native Rock Structure</p><img src="Sections/Catalogue/Native Decor/Native Rock Structure.png"></div>
+  <div class="filterDiv nativedecor"><p>Native Decor 1</p><img src="Sections/Catalogue/Native Decor/Native Decor 1.png"></div>
+  <!-- GARDEN DECOR -->
+  <div class="filterDiv gardendecor"><p>Wooden Fence</p><img src="Sections/Catalogue/Garden Decor/Wooden Fence.png"></div>
+  <div class="filterDiv gardendecor"><p>Hitching Post</p><img src="Sections/Catalogue/Garden Decor/Hitching Post.png"></div>
+  <div class="filterDiv gardendecor"><p>Coffin</p><img src="Sections/Catalogue/Garden Decor/Coffin.png"></div>
+  <div class="filterDiv gardendecor"><p>Flower Coffin</p><img src="Sections/Catalogue/Garden Decor/Flower Coffin.png"></div>
+  <div class="filterDiv gardendecor"><p>Clothes Line</p><img src="Sections/Catalogue/Garden Decor/Clothes Line.png"></div>
+  <div class="filterDiv gardendecor"><p>Water Pump</p><img src="Sections/Catalogue/Garden Decor/Water Pump.png"></div>
+  <div class="filterDiv gardendecor"><p>Flower Boxes</p><img src="Sections/Catalogue/Garden Decor/Flower Boxes.png"></div>
+  <div class="filterDiv gardendecor"><p>Shooting Target</p><img src="Sections/Catalogue/Garden Decor/Shooting Target.png"></div>
+  <div class="filterDiv gardendecor"><p>Xmas Tree</p><img src="Sections/Catalogue/Garden Decor/Xmas Tree.png"></div>
+  <div class="filterDiv gardendecor"><p>Xmas Pole</p><img src="Sections/Catalogue/Garden Decor/Xmas Pole.png"></div>
+  <!-- TENTS -->
+  <div class="filterDiv tents"><p>Canvas Shade</p><img src="Sections/Catalogue/Tents/Canvas Shade.png"></div>
+  <div class="filterDiv tents"><p>Wolf Pelt Native Tent</p><img src="Sections/Catalogue/Tents/Wolf Pelt Native Tent.png"></div>
+  <div class="filterDiv tents"><p>Simple Native Tent</p><img src="Sections/Catalogue/Tents/Simple Native Tent.png"></div>
+  <div class="filterDiv tents"><p>Deer Pelt Native Tent</p><img src="Sections/Catalogue/Tents/Deer Pelt Native Tent.png"></div>
+  <div class="filterDiv tents"><p>Simple Tent</p><img src="Sections/Catalogue/Tents/Simple Tent.png"></div>
+  <div class="filterDiv tents"><p>Native Cooking Structure</p><img src="Sections/Catalogue/Tents/Native Cooking Structure.png"></div>
+  <div class="filterDiv tents"><p>Tipi</p><img src="Sections/Catalogue/Tents/Tipi.png"></div>
+  <div class="filterDiv tents"><p>Native Platform</p><img src="Sections/Catalogue/Tents/Native Platform.png"></div>
+  <div class="filterDiv tents"><p>Native Elk Canvas</p><img src="Sections/Catalogue/Tents/Native Elk Canvas.png"></div>
+  <div class="filterDiv tents"><p>Trader Tent</p><img src="Sections/Catalogue/Tents/Trader Tent.png"></div>
+  <div class="filterDiv tents"><p>Bounty Hunter Tent</p><img src="Sections/Catalogue/Tents/Bounty Hunter Tent.png"></div>
+  <!-- CAGES -->
+  <div class="filterDiv cages"><p>Native Wooden Cage</p><img src="Sections/Catalogue/Cages/Native Wooden Cage.png"></div>
+  <div class="filterDiv cages"><p>Cage</p><img src="Sections/Catalogue/Cages/Cage.png"></div>
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+</body>
+</html>

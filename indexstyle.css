@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url(./Fonts/chinese rocks rg.otf);
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-image: url("Backgrounds/2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  font-family: "Redressed";
+  font-size: 100px;
+  text-align: center;
+  margin-top: 60px;
+  color: #bf8a40;
+  -webkit-text-stroke: 0.1px #9D6E2C;
+  
+}
+
+/* BUTTONS -------------------------------------------------*/
+
+#myBtnContainer {
+  display: grid;
+  position: fixed;
+  background: rgb(247,235,222);
+  background: radial-gradient(circle, rgba(247,235,222,0.6320903361344538) 100%, rgba(255,255,255,1) 100%);
+
+  margin-left: 13px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: double;
+  border-width: 8px;
+  border-color: #c69754;
+}
+
+.btn {
+  font-family: "Redressed";
+  font-size: 20px;
+  font-weight: bold;
+  color: #D1A25F;
+  border-style: double;
+  border-radius: 10px;
+  border-color: #c69754;
+  border-width: 4px;
+  padding: 5px;
+  background-color: #86772a;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #A57633;
+  color: #c69754;
+  border-color: #c69754;
+}
+
+.btn.active {
+  background-color: #f4d4a5;
+}
+
+/*-------------------------------------------------*/
+
+.container {
+ max-width: 90%;
+ margin-left: 200px;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ overflow: hidden;
+}
+
+p {
+  font-family: "Chinese Rocks";
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -5px;
+  color: #D1A25F;
+  background: rgb(130,116,43);
+  background: radial-gradient(circle, rgba(130,116,43,1) 48%, rgba(108,98,43,1) 100%);
+  border-color: #b78845;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+}
+
+.filterDiv {
+  text-align: center;
+  display: none;
+  width: 250px;
+  height: 330px;
+  padding: 20px;
+  margin: 5px;
+  border-radius: 20px;
+  border-color: #c69754;
+  border-style: double;
+  border-width: 8px;
+  background: rgb(247,235,222);
+  background: radial-gradient(circle, rgba(247,235,222,0.6320903361344538) 100%, rgba(255,255,255,1) 100%);
+}
+
+.show {
+  display: block;
+}
+
+.container img {
+  max-height: 260px;
+  max-width: 270px;
+}
