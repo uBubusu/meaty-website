@@ -2,11 +2,13 @@
 
 @font-face {
   font-family: "Chinese Rocks";
-  src: url(./Fonts/chinese rocks rg.otf);
+  src: url(Fonts/chinese rocks rg.otf);
 }
 
 body, html {
   height: 100%;
+  width: 100%;
+  margin: 0;
 }
 
 body {
@@ -16,25 +18,75 @@ body {
 }
 
 h1 {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.5);
+  border-radius: 50px;
+  border-color: #9E753B;
+  border-style: solid;
+  border-width: 2px;
+  color: #b78845;
+  font-size: 500%;
   font-family: "Redressed";
-  font-size: 100px;
+  font-weight: bold;
+  position: absolute;
+  margin-top: -300px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 70%;
+  padding: 20px;
   text-align: center;
-  margin-top: 60px;
-  color: #bf8a40;
-  -webkit-text-stroke: 0.1px #9D6E2C;
-  
+}
+
+/* NAVBAR -------------------------------------------------*/
+
+#navbar {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9a2425ff;
+  position: fixed;
+  border-bottom: #b78845 solid 3px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  font-family: "Redressed";
+  color: #c69754;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #A57633;
+}
+
+.activenav {
+  background-color: #f4d4a5;
 }
 
 /* BUTTONS -------------------------------------------------*/
 
 #myBtnContainer {
   display: grid;
-  position: fixed;
+  float: left;
+  margin-left: 15px;
+  margin-top: 15px;
+  padding: 10px;
   background: rgb(247,235,222);
   background: radial-gradient(circle, rgba(247,235,222,0.6320903361344538) 100%, rgba(255,255,255,1) 100%);
-
-  margin-left: 13px;
-  padding: 10px;
   border-radius: 20px;
   border-style: double;
   border-width: 8px;
@@ -43,7 +95,7 @@ h1 {
 
 .btn {
   font-family: "Redressed";
-  font-size: 20px;
+  font-size: 120%;
   font-weight: bold;
   color: #D1A25F;
   border-style: double;
@@ -51,7 +103,7 @@ h1 {
   border-color: #c69754;
   border-width: 4px;
   padding: 5px;
-  background-color: #86772a;
+  background-color: #9a2425ff;
   cursor: pointer;
 }
 
@@ -70,6 +122,7 @@ h1 {
 .container {
  max-width: 90%;
  margin-left: 200px;
+ margin-top: 11px;
  display: flex;
  flex-wrap: wrap;
  justify-content: center;
@@ -78,14 +131,17 @@ h1 {
 }
 
 p {
-  font-family: "Chinese Rocks";
-  font-size: 30px;
+  font-family: "Redressed";
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 5px;
   text-align: center;
   margin-bottom: 25px;
-  margin-top: -5px;
+  margin-top: -10px;
   color: #D1A25F;
-  background: rgb(130,116,43);
-  background: radial-gradient(circle, rgba(130,116,43,1) 48%, rgba(108,98,43,1) 100%);
+  background: rgb(154,36,37);
+  background: radial-gradient(circle, rgba(154,36,37,1) 48%, rgba(135,31,32,1) 100%);
   border-color: #b78845;
   border-style: solid;
   border-radius: 20px;
