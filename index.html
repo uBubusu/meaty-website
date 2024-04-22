@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="indexstyle.css">
-  <title> GGI Equestrian Website </title>
-</head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="indexstyle.css">
+    <title> GGI Equestrian Website </title>
+  </head>
 <body>
 
-<h1>FURNITURE CATALOGUE</h1>
+  <ul id="navbar">
+    <li><a href="#">THE HUB</a></li>
+    <li class="activenav"><a href="#">FURNITURE CATALOGUE</a></li>
+    <li><a href="#">SPOONER DATABASE</a></li>
+    <li><a href="#">MEATY TIMES</a></li>
+    <li><a href="#">BEGINNER GUIDES</a></li>
+  </ul>
+
+  <img class="header" src="Headers/FCheader.png" width="100%">
+  <h1>FURNITURE CATALOGUE</h1>
 
 <div id="myBtnContainer">
   <button class="btn active" onclick="filterSelection('all')"> SHOW ALL </button>
@@ -172,7 +181,6 @@ function w3RemoveClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-// Add active class to the current button (highlight it)
 var btnContainer = document.getElementById("myBtnContainer");
 var btns = btnContainer.getElementsByClassName("btn");
 for (var i = 0; i < btns.length; i++) {
