@@ -17,6 +17,11 @@ body {
   background-attachment: fixed;
 }
 
+.header {
+  margin-top: 47px;
+}
+
+
 h1 {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0, 0.5);
@@ -25,11 +30,11 @@ h1 {
   border-style: solid;
   border-width: 2px;
   color: #b78845;
-  font-size: 500%;
+  font-size: 5vw;
   font-family: "Redressed";
   font-weight: bold;
   position: absolute;
-  margin-top: -300px;
+  margin-top: -16vw;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
