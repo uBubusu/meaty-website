@@ -83,19 +83,20 @@ li a:hover:not(.active) {
 
 .pdf {
   position: absolute;
-  margin-top: 675px;
+  margin-top: 750px;
   margin-left: 15px;
   text-align: center;
   font-family: 'Redressed';
   font-size: 30px;
   width: 160px;
-  padding: 10px;
+  padding: 18px;
   color: #D1A25F;
   background-color: #9a2425ff;
   border-color: #b78845;
   border-style: solid;
   border-radius: 20px;
   border-width: 3px;
+  z-index: -1;
 }
 
 /* BUTTONS -------------------------------------------------*/
