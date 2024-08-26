@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url("../../Fonts/chinese rocks rg.otf");
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Redressed";
+}
+
+body {
+  background-image: url("../../Media/Backgrounds/2.jpg");
+  background-attachment: fixed;
+
+}
+
+/* HEADER -------------------------------------------------*/
+
+.header {
+  margin-top: 2.2vw;
+  border-bottom: #b78845 solid 3px;
+}
+
+/* GOUP -------------------------------------------------*/
+
+.goup a {
+  z-index: 2;
+}
+.goup img {
+  float: right;
+  position: fixed;
+  width: 2.5vw;
+  margin-top: 4vw;
+  margin-left: 0.8vw;
+  z-index: 2;
+}
+
+/* NAVBAR -------------------------------------------------*/
+
+#navbar {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9a2425ff;
+  position: fixed;
+  border-bottom: #b78845 solid 3px;
+  z-index: 2;
+}
+
+li {
+  float: left;
+}
+
+#navbar li a {
+  display: block;
+  color: #c69754;
+  font-size: 0.9vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #A57633;
+}
+
+.activenav {
+  background-color: #f4d4a5;
+}
+
+/* FILTERS -------------------------------------------------*/
+
+#contentleft {
+  max-width: 12%;
+  margin-left: 1vw;
+  margin-top: 0.8vw;
+  float: left;
+}
+
+#filters {
+  padding: 10px;
+  background: rgb(247,235,222);
+  background: radial-gradient(circle, rgba(247,235,222,0.6320903361344538) 100%, rgba(255,255,255,1) 100%);
+  border-radius: 20px;
+  border-style: double;
+  border-width: 8px;
+  border-color: #c69754;
+}
+
+.btn {
+  width: 100%;
+  font-family: "Redressed";
+  font-size: 0.8vw;
+  font-weight: bold;
+  color: #D1A25F;
+  border-style: double;
+  border-radius: 10px;
+  border-color: #c69754;
+  border-width: 4px;
+  padding: 5px;
+  background-color: #9a2425ff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #A57633;
+  color: #c69754;
+  border-color: #c69754;
+}
+
+.btn.active {
+  background-color: #f4d4a5;
+}
+
+/* PDF DOWNLOAD -------------------------------------------------*/
+
+.pdf {
+  text-align: center;
+  font-size: 1.35vw;
+  padding: 1vw;
+  color: #D1A25F;
+  background-color: #9a2425ff;
+  border-color: #b78845;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+  z-index: -1;
+  margin-top: 0.5vw;
+}
+
+/* ITEMS -------------------------------------------------*/
+
+#furniture-grid {
+  padding: 0vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 0.5vw;
+  max-width: 86.95%;
+  margin-top: 0.8vw;
+}
+
+
+#furniture-grid p {
+  text-transform: uppercase;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 25px;
+  margin-top: -10px;
+  color: #D1A25F;
+  background: rgb(154,36,37);
+  background: radial-gradient(circle, rgba(154,36,37,1) 48%, rgba(135,31,32,1) 100%);
+  border-color: #b78845;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 3px;
+}
+
+.item {
+  text-align: center;
+  display: none;
+  width: 10.5vw;
+  height: 13vw;
+  padding: 20px;
+  border-radius: 20px;
+  border-color: #c69754;
+  border-style: double;
+  border-width: 8px;
+  background: rgb(241,224,204);
+  background: radial-gradient(circle, rgba(241,224,204,0.5494572829131652) 0%, rgba(212,202,190,1) 100%);
+}
+
+.show {
+  display: block;
+}
+
+.item img {
+  max-height: 9vw;
+  max-width: 11vw;
+  display: inline-block;
+  margin: 0 auto;
+  margin-left: -0.25vw;
+  margin-top: 0.5vw;
+}
+
+.itemprice img {
+  translate: 3vw 10vw;
+  width: 3vw;
+  position: absolute;
+  z-index: 0;
+}
