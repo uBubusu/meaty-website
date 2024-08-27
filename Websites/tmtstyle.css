@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Redressed&display=swap');
+
+@font-face {
+  font-family: "Chinese Rocks";
+  src: url("Fonts/chinese rocks rg.otf");
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Redressed";
+}
+
+body {
+  background-image: url("../Media/Backgrounds/183.jpg");
+  background-size: 300px;
+}
+
+/* GOUP -------------------------------------------------*/
+
+.goup a {
+  z-index: 2;
+}
+
+.goup img {
+  float: right;
+  position: fixed;
+  width: 2.5vw;
+  margin-top: -1vw;
+  margin-left: 0.8vw;
+}
+
+/* NAVBAR -------------------------------------------------*/
+
+#navbar {
+  list-style-type: none;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #9a2425ff;
+  position: fixed;
+  border-bottom: #b78845 solid 3px;
+  z-index: 2;
+}
+
+#navbar li {
+  float: left;
+}
+
+#navbar .circus {
+  font-size: 1.2vw;
+  padding: 5px 10px;
+  background-color:#b78845;
+}
+
+#navbar li a {
+  display: block;
+  font-size: 0.9vw;
+  color: #c69754;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+
+#navbar li a:hover:not(.active) {
+  background-color: rgb(119, 28, 30);
+}
+
+.activenav {
+  background-color: #f4d4a5;
+}
+
+/* NEWS CONTENT ----------------------------------------------*/
+
+#container {
+  max-width: 81%;
+  margin: 0 auto;
+  background-image: url("../Media/Backgrounds/tmtbg.jpg");
+  background-size: 100%;
+  box-shadow: 10px 10px 20px rgb(71, 71, 71);
+}
+
+h1 {
+  padding-top: 40px;
+  font-size: 7.5vw;
+  text-align: center;
+}
+
+#categories {
+  list-style: none;
+  margin-top: -2vw;
+  overflow: hidden;
+  border-top: black solid 2px;
+  border-bottom: black solid 2px;
+}
+
+#categories a {
+  float: left;
+  text-decoration: none;
+  padding: -0.5vw;
+}
+
+#categories a p {
+  display: inbline-block;
+  color: black;
+  font-size: 0.9vw;
+  padding-left: 1.5vw;
+  padding-right: 1.5vw;
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+
+/* FRONT PAGE GRID ----------------------------------------------*/
+
+#grid-fp {
+  padding: 0vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 10vw repeat(4, 11vw) 9vw 13vw repeat(3, 11vw);
+  grid-gap: 1.5vw;
+}
+
+.fp-art1-tit {
+  grid-row: 1 / 1;
+  grid-column: 1 / 5;
+  margin-top: 0.7vw;
+}
+.fp-art1-tit h2 {
+  margin-top: 1vw;
+  font-size: 3.8vw;
+  font-weight: bold;
+  text-align: center;
+}
+.fp-art1-tit p {
+  font-size: 2vw;
+  margin-top: -3vw;
+  color: rgb(77, 74, 74);
+  text-align: center;
+}
+.fp-art1-pic {
+  grid-row: 2 / 5;
+  grid-column: 1 / 4;
+  margin-bottom: 1vw;
+  background-image: url("../Media/Sections/TMT/FP/portada.png");
+  background-size: cover;
+}
+.fp-art1-text {
+  grid-row: 2 / 5;
+  grid-column: 4 / 5;
+}
+
+.fp-cat {
+  background-color: rgba(194, 184, 171, 0.37);
+  border-radius: 20px;
+}
+.fp-cat h4 {
+  margin-top: 0;
+  padding-left: 0.7vw;
+  padding-top: 0.4vw;
+  font-size: 1.6vw;
+}
+.fp-cat p {
+  font-size: 1.3vw;
+  text-align: justify;
+  padding: 0vw 0.7vw 0.7vw 0.7vw;
+  margin-top: -1.2vw;
+}
+
+.fp-art2-tit {
+  grid-row: 6 / 6;
+  grid-column: 2 / 5;
+}
+.fp-art2-pic {
+  grid-row: 7 / 10;
+  grid-column: 3 / 5;
+  background-image: url("../Media/Sections/TMT/FP/portada2.png");
+  background-size: cover;
+}
+.fp-art2-text {
+  grid-row: 7 / 10;
+  grid-column: 2 / 3;
+}
+
+.fp-ad1 {
+  grid-row: 6 / 8;
+  grid-column: 1 / 1;
+}
+.fp-ad2 {
+  grid-row: 8 / 10;
+  grid-column: 1 / 1;
+}
+.fp-ad3 {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+.fp-ad4 {
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+
+/* PEOPLE GRID -------------------------------------------------------*/
+
+#grid-people {
+  padding: 1vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 9vw) repeat(2, 7vw 23.5vw 15.5vw) 
+  5vw 7vw 23.5vw 15.5vw 11vw;
+  grid-gap: 1.5vw;
+}
+
+.p-art1-tit {
+  grid-row: 1 / 1;
+  grid-column: 1 / 8;
+}
+.p-art1-pic {
+  grid-row: 2 / 5;
+  grid-column: 1 / 5;
+  background-image: url("../Media/Sections/TMT/People/pic1.png");
+  background-size: cover;
+}
+.p-art1-text {
+  grid-row: 2 / 5;
+  grid-column: 5 / 8;
+}
+
+.p-art2-tit {
+  grid-row: 5 / 5;
+  grid-column: 1 / 4;
+}
+.p-art2-pic {
+  grid-row: 6 / 6;
+  grid-column: 1 / 4;
+  background-image: url("../Media/Sections/TMT/People/pic2.png");
+  background-size: cover;
+}
+.p-art2-text {
+  grid-row: 7 / 7;
+  grid-column: 1 / 4;
+}
+
+.p-art3-tit {
+  grid-row: 5 / 5;
+  grid-column: 4 / 7;
+}
+.p-art3-pic {
+  grid-row: 6 / 6;
+  grid-column: 4 / 7;
+}
+.p-art3-text {
+  grid-row: 7 / 7;
+  grid-column: 4 / 7;
+}
+
+.p-art4-tit {
+  grid-row: 5 / 5;
+  grid-column: 7 / 10;
+}
+.p-art4-pic {
+  grid-row: 6 / 6;
+  grid-column: 7 / 10;
+  background-image: url("../Media/Sections/TMT/People/pic4.png");
+  background-size: cover;
+}
+.p-art4-text {
+  grid-row: 7 / 7;
+  grid-column: 7 / 10;
+}
+
+.p-art5-tit {
+  grid-row: 8 / 8;
+  grid-column: 1 / 4;
+}
+.p-art5-pic {
+  grid-row: 9 / 9;
+  grid-column: 1 / 4;
+  background-image: url("../Media/Sections/TMT/People/pic5.png");
+  background-size: cover;
+}
+.p-art5-text {
+  grid-row: 10 / 10;
+  grid-column: 1 / 4;
+}
+
+.p-art6-tit {
+  grid-row: 8 / 8;
+  grid-column: 4 / 7;
+}
+.p-art6-pic {
+  grid-row: 9 / 9;
+  grid-column: 4 / 7;
+  background-image: url("../Media/Sections/TMT/People/pic6.png");
+  background-size: cover;
+}
+.p-art6-text {
+  grid-row: 10 / 10;
+  grid-column: 4 / 7;
+}
+
+.p-art7-tit {
+  grid-row: 8 / 8;
+  grid-column: 7 / 10;
+}
+.p-art7-pic {
+  grid-row: 9 / 9;
+  grid-column: 7 / 10;
+  background-image: url("../Media/Sections/TMT/People/pic7.png");
+  background-size: cover;
+}
+.p-art7-text {
+  grid-row: 10 / 10;
+  grid-column: 7 / 10;
+}
+
+.p-art8-tit {
+  grid-row: 12 / 12;
+  grid-column: 1 / 4;
+}
+.p-art8-pic {
+  grid-row: 13 / 13;
+  grid-column: 1 / 4;
+  background-image: url("../Media/Sections/TMT/People/pic8.png");
+  background-size: cover;
+}
+.p-art8-text {
+  grid-row: 14 / 14;
+  grid-column: 1 / 4;
+}
+
+.p-art9-tit {
+  grid-row: 12 / 12;
+  grid-column: 4 / 7;
+}
+.p-art9-pic {
+  grid-row: 13 / 13;
+  grid-column: 4 / 7;
+  background-image: url("../Media/Sections/TMT/People/pic9.png");
+  background-size: cover;
+}
+.p-art9-text {
+  grid-row: 14 / 14;
+  grid-column: 4 / 7;
+}
+
+.p-art10-tit {
+  grid-row: 12 / 12;
+  grid-column: 7 / 10;
+}
+.p-art10-pic {
+  grid-row: 13 / 13;
+  grid-column: 7 / 10;
+  background-image: url("../Media/Sections/TMT/People/pic10.png");
+  background-size: cover;
+}
+.p-art10-text {
+  grid-row: 14 / 14;
+  grid-column: 7 / 10;
+}
+
+.p-ad1 {
+  grid-row: 1 / 3;
+  grid-column: 8 / 10;
+}
+.p-ad2 {
+  grid-row: 3 / 5;
+  grid-column: 8 / 10;
+}
+.p-ad3 {
+  grid-row: 15 / 15;
+  grid-column: 1 / 5;
+}
+.p-ad4 {
+  grid-row: 15 / 15;
+  grid-column: 5 / 10;
+}
+
+
+/* WORLD GRID ----------------------------------------------*/
+
+#grid-world {
+  padding: 1vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(8, 9vw);
+  grid-gap: 1.5vw;
+}
+
+.w-art1-pic {
+  grid-row: 2 / 5;
+  grid-column: 6 / 10;
+  background-image: url("../Media/Sections/TMT/World/pic1.png");
+  background-size: cover;
+}
+.w-art2-pic {
+  grid-row: 6 / 9;
+  grid-column: 1 / 5;
+  background-image: url("../Media/Sections/TMT/World/pic2.png");
+  background-size: cover;
+}
+
+/* EVENTS GRID ----------------------------------------------*/
+
+#grid-events {
+  padding: 1vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(12, 9vw);
+  grid-gap: 1.5vw;
+}
+
+.e-art1-tit {
+  grid-row: 1 / 1;
+  grid-column: 3 / 10;
+}
+.e-art1-pic {
+  grid-row: 2 / 5;
+  grid-column: 6 / 10;
+  background-image: url("../Media/Sections/TMT/Events/pic1.png");
+  background-size: cover;
+}
+.e-art1-text {
+  grid-row: 2 / 5;
+  grid-column: 3 / 6;
+}
+
+.e-art2-tit {
+  grid-row: 5 / 5;
+  grid-column: 1 / 8;
+}
+.e-art2-pic {
+  grid-row: 6 / 9;
+  grid-column: 1 / 5;
+  background-image: url("../Media/Sections/TMT/Events/pic2.png");
+  background-size: cover;
+}
+.e-art2-text {
+  grid-row: 6 / 9;
+  grid-column: 5 / 8;
+}
+
+.e-art3-tit {
+  grid-row: 9 / 9;
+  grid-column: 3 / 10;
+}
+.e-art3-pic {
+  grid-row: 10 / 13;
+  grid-column: 6 / 10;
+  background-image: url("../Media/Sections/TMT/Events/pic3.png");
+  background-size: cover;
+}
+.e-art3-text {
+  grid-row: 10 / 13;
+  grid-column: 3 / 6;
+}
+
+.e-ad1 {
+  grid-row: 1 / 3;
+  grid-column: 1 / 3;
+}
+.e-ad2 {
+  grid-row: 3 / 5;
+  grid-column: 1 / 3;
+}
+.e-ad3 {
+  grid-row: 5 / 7;
+  grid-column: 8 / 10;
+}
+.e-ad4 {
+  grid-row: 7 / 9;
+  grid-column: 8 / 10;
+}
+.e-ad5 {
+  grid-row: 9 / 11;
+  grid-column: 1 / 3;
+}
+.e-ad6 {
+  grid-row: 11 / 13;
+  grid-column: 1 / 3;
+}
+
+
+/* MEATY GRID ----------------------------------------------*/
+
+#grid-meaty {
+  padding: 1vw 2.5vw 2.5vw 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(4, 9vw) 7vw 9vw 5vw 11vw;
+  grid-gap: 1.5vw;
+}
+
+.mw-art1-pic {
+  grid-row: 2 / 5;
+  grid-column: 1 / 5;
+  background-image: url("../Media/Sections/TMT/MW/pic1.png");
+  background-size: cover;
+}
+.mw-art2-text {
+  grid-row: 6 / 8;
+  grid-column: 1 / 4;
+}
+.mw-art3-text {
+  grid-row: 6 / 8;
+  grid-column: 4 / 7;
+}
+.mw-art4-text {
+  grid-row: 6 / 8;
+  grid-column: 7 / 10;
+}
+
+.mw-ad3 {
+  grid-row: 8 / 8;
+  grid-column: 1 / 5;
+}
+.mw-ad4 {
+  grid-row: 8 / 8;
+  grid-column: 5 / 10;
+}
+
+
+/* ARTICLE PROPERTIES ----------------------------------------------*/
+
+.art-tit h3 {
+  margin-top: 1.5vw;
+  font-size: 2.8vw;
+  font-weight: bold;
+  text-align: center;
+}
+
+.art-tit p {
+  font-size: 1.5vw;
+  margin-top: -2.2vw;
+  color: rgb(77, 74, 74);
+  text-align: center;
+}
+
+.art-pic {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #A57633;
+}
+
+.art-pic p {
+  display: inline-block;
+
+  background-color: rgba(245, 245, 220, 0.5);
+  font-size: 1vw;
+  padding: 0.2vw 0.5vw 0.2vw 0.5vw;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.art-text p {
+  font-size: 1.3vw;
+  margin: 0;
+  padding-bottom: 0.8vw;
+  text-align: justify;
+  color: black;
+}
+
+.ad img {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #A57633;
+  transition: transform .2s;
+}
+
+.ad a img:hover {
+  transform: scale(1.5);
+}
+
+
+/* FOOTER ---------------------------------------------------------*/
