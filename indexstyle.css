@@ -40,24 +40,36 @@ body {
   border-bottom: #b78845 solid 3px;
   z-index: 2;
 }
+
 #navbar li {
   float: left;
 }
+
+#navbar .circus {
+  font-size: 1.2vw;
+  padding: 5px 10px;
+  background-color:#b78845;
+}
+
 #navbar li a {
   display: block;
-  color: #c69754;
   font-size: 0.9vw;
+  color: #c69754;
   font-weight: bold;
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
 }
+
 #navbar li a:hover:not(.active) {
-  background-color: #A57633;
+  background-color: rgb(119, 28, 30);
 }
+
 .activenav {
   background-color: #f4d4a5;
 }
+
+/*-------------------------------------------------*/
 
 .workinprogress img {
     height: 20vw;
