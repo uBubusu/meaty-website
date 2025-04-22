@@ -128,21 +128,6 @@ body {
   background-color: #f4d4a5;
 }
 
-/* PDF DOWNLOAD -------------------------------------------------*/
-
-.pdf {
-  text-align: center;
-  font-size: 1.35vw;
-  padding: 1vw;
-  color: #D1A25F;
-  background-color: #9a2425ff;
-  border-color: #b78845;
-  border-style: solid;
-  border-radius: 20px;
-  border-width: 3px;
-  z-index: -1;
-  margin-top: 0.5vw;
-}
 
 /* ITEMS -------------------------------------------------*/
 
